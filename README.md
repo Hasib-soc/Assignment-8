@@ -24,4 +24,4 @@ npm install
 npm run dev
 
 ## 👨‍💻 Author
-Hasib
+Hasibul Haque
