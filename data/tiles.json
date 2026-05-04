@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "title": "Blue Tile",
+    "description": "Premium ceramic tile",
+    "image": "https://picsum.photos/400/300?1",
+    "price": 45
+  },
+  {
+    "id": "2",
+    "title": "Grey Tile",
+    "description": "Modern design",
+    "image": "https://picsum.photos/400/300?2",
+    "price": 55
+  }
+]
