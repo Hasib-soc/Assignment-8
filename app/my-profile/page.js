@@ -1,25 +1,17 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
-export default function Profile() {
-  const router = useRouter();
+export default function MyProfile() {
+  const [url, setUrl] = useState("");
 
-  const user =
-    typeof window !== "undefined" && localStorage.getItem("user");
-
-  if (!user) {
-    router.push("/login");
-    return null;
-  }
+  useEffect(() => {
+    setUrl(window.location.href);
+  }, []);
 
   return (
-    <div className="p-6">
-      <h1>My Profile</h1>
-
-      <button className="btn mt-4" onClick={() => router.push("/update-profile")}>
-        Update
-      </button>
+    <div>
+      Current URL: {url}
     </div>
   );
 }
